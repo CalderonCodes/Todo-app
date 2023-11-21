@@ -12,7 +12,7 @@ function ThemeSwap() {
 
     {/* sun icon */}
     <svg
-      className="swap-on fill-current w-10 h-10"
+      className="swap-on fill-white w-10 h-10"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -21,7 +21,7 @@ function ThemeSwap() {
 
     {/* moon icon */}
     <svg
-      className="swap-off fill-current w-10 h-10"
+      className="swap-off fill-white w-10 h-10"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
