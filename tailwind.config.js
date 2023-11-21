@@ -6,35 +6,48 @@ export default {
   theme: {
     
 
-    colors: {
-      'very-light-gray': 'hsl(0, 0%, 98%)',
-      'very-light-grayish-blue': 'hsl(236, 33%, 92%)',
-      'light-grayish-blue': 'hsl(233, 11%, 84%)',
-      'dark-grayish-blue': 'hsl(236, 9%, 61%)',
-      'very-dark-grayish-blue': 'hsl(235, 19%, 35%)',
-
-      'very-dark-blue': 'hsl(235, 21%, 11%)',
-        'very-dark-desaturated-blue': 'hsl(235, 24%, 19%)',
-        'light-grayish-blue': 'hsl(234, 39%, 85%)',
-        'light-grayish-blue-hover': 'hsl(236, 33%, 92%)',
-        'dark-grayish-blue': 'hsl(234, 11%, 52%)',
-        'very-dark-grayish-blue': 'hsl(233, 14%, 35%)',
-        'very-dark-grayish-blue-2': 'hsl(237, 14%, 26%)',
-    },
-
     
     extend: {
-     
+     backgroundImage: {
+      'desktop-light': "url('/public/assets/bg-desktop-light.jpg')",
+      'desktop-dark': "url('/public/assets/bg-desktop-dark.jpg')",
+     },
 
+     height: {  
+      '4/10': '40%',
+     },
     },
     fontFamily: {
-      Overpass: ['Overpass'],
+      Josefin: ['Josefin Sans', 'sans-serif'],
       
     }
   },
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: ["light"],
+    themes: [{
+      myLight: {
+        "primary": "hsl(236, 9%, 61%)",
+        "secondary": "hsl(233, 11%, 84%)",
+        "accent": "hsl(235, 19%, 35%)",
+        "neutral": "hsl(235, 19%, 35%)",
+        "base-100": "hsl(0, 0%, 96%)",
+        "base-200": "hsl(0, 0%, 98%)",
+      },
+
+      myDark: {
+        "primary": "hsl(234, 39%, 85%)",
+        "secondary": "hsl(234, 11%, 52%)",
+        "accent": "hsl(237, 14%, 26%)",
+        "neutral": "hsl(235, 19%, 35%)",
+        "base-200": "hsl(235, 24%, 19%)",
+        "base-100": "hsl(240, 20%, 12%)",
+      },
+
+      
+    },
+    
+  
+  ],
   },
 }

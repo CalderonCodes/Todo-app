@@ -1,0 +1,10 @@
+:root {
+    --my-color: #fff;
+    /* or any other variables/style */
+  }
+  [data-theme='myDark'] {
+    --my-color: #000;
+  }
+  [data-theme='myLight'] {
+    --my-color: #ffabc8;
+  }

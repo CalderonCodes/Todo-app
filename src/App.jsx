@@ -1,12 +1,19 @@
-
+import "./App.css";
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
+import Home from "./Pages/Home/Home";
 
 function App() {
-
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
   return (
     <>
-     <h1 className='text-dark-grayish-blue'>hola</h1>
+      <Home />
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
