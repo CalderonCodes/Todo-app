@@ -11,6 +11,19 @@ export default {
      backgroundImage: {
       'desktop-light': "url('/public/assets/bg-desktop-light.jpg')",
       'desktop-dark': "url('/public/assets/bg-desktop-dark.jpg')",
+      'mobile-light': "url('/public/assets/bg-mobile-light.jpg')",
+      'mobile-dark': "url('/public/assets/bg-mobile-dark.jpg')",
+     },
+     backgroundColor: {
+      'check-background': 'linear-gradient(192deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%))',
+      
+     },
+
+     colors: {
+      
+      'check': 'linear-gradient(192deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%))',
+      'gradient1': 'hsl(192, 100%, 67%)',
+      'gradient2': 'hsl(280, 87%, 65%)',
      },
 
      height: {  
@@ -27,9 +40,9 @@ export default {
   daisyui: {
     themes: [{
       myLight: {
-        "primary": "hsl(236, 9%, 61%)",
+        "accent": "hsl(236, 9%, 61%)",
         "secondary": "hsl(233, 11%, 84%)",
-        "accent": "hsl(235, 19%, 35%)",
+        "primary": "hsl(235, 19%, 35%)",
         "neutral": "hsl(235, 19%, 35%)",
         "base-100": "hsl(0, 0%, 96%)",
         "base-200": "hsl(0, 0%, 98%)",
