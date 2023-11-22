@@ -1,7 +1,14 @@
 import React from 'react'
 
+import useStore from "../../taskStore";
 function Task({task}) {
 
+  
+  const { tasks, addTask, removeTask } = useStore();
+
+  const handleDelete = () => {
+    removeTask(task.id)
+  };
   
 
   return (
@@ -11,7 +18,7 @@ function Task({task}) {
       <p className='text-left'> {task.content}</p>
       </div>
      
-      <button className="btn btn-circle btn-sm hover:bg-inherit transition-none hover:border-0 relative  ">
+      <button onClick={handleDelete} className="btn btn-circle btn-sm hover:bg-inherit transition-none hover:border-0 relative  ">
         <img src="assets/icon-cross.svg" alt="" />
       </button>
     </div>
