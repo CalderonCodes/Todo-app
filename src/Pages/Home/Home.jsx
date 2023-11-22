@@ -30,16 +30,16 @@ function Home() {
         </div>
         <NewTask />
         <div className="w-full  rounded-lg bg-base-200 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-        <div className="w-full h-16 px-5 flex justify-center text-secondary border-b border-secondary items-center">
+        {tasks.length === 0 && (<div className="w-full h-16 px-5 flex justify-center text-secondary border-b border-secondary items-center">
             <p className="text-xl ">No task left!</p>
-          </div>
+          </div>)}
           
           {tasks.map((task) => (
             <Task key={uuidv4()} task={task} />
           )) }
 
           <div className="w-full h-16 px-5  flex justify-between text-secondary lg:text-sm  items-center">
-            <p className="lg:w-1/3">5 items left</p>
+            <p className="lg:w-1/3">{tasks.length} items left</p>
             <DesktopFilters />
             <p className="lg:w-1/3">Clear Completed</p>
           </div>

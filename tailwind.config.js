@@ -9,10 +9,10 @@ export default {
     
     extend: {
      backgroundImage: {
-      'desktop-light': "url('/public/assets/bg-desktop-light.jpg')",
-      'desktop-dark': "url('/public/assets/bg-desktop-dark.jpg')",
-      'mobile-light': "url('/public/assets/bg-mobile-light.jpg')",
-      'mobile-dark': "url('/public/assets/bg-mobile-dark.jpg')",
+      'desktop-light': "url('assets/bg-desktop-light.jpg')",
+      'desktop-dark': "url('assets/bg-desktop-dark.jpg')",
+      'mobile-light': "url('assets/bg-mobile-light.jpg')",
+      'mobile-dark': "url('assets/bg-mobile-dark.jpg')",
 
       'check-background': 'linear-gradient(192deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%))',
      },
